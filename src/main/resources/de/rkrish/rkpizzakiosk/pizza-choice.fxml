@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox styleClass="page-container" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.rkrish.rkpizzakiosk.gui.dashboard.PizzaChoice">
+
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+
+    <Label fx:id="welcomeText" alignment="CENTER" contentDisplay="CENTER" styleClass="top-header" text="Welcome To Pizza Kiosk " textAlignment="CENTER" textFill="#ab4b4b">
+      <font>
+         <Font size="18.0" />
+      </font></Label>
+
+
+        <Label text="Pizza:" />
+        <ComboBox fx:id="pizzaComboBox" prefHeight="42.0" prefWidth="533.0" promptText="choose Pizza Type" styleClass="combo-box" />
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="page-container">
+
+           <Label styleClass="qty-row" text="Qty:" />
+            <TextField fx:id="pizzaQtyTextField" alignment="CENTER" prefHeight="40.0" promptText="Enter Qty" styleClass="text-field" />
+            <Button fx:id="pizzaAddButton" onAction="#onAddPizzaClicked" prefHeight="42.0" text="ADD" textAlignment="RIGHT" />
+        </HBox>
+
+        <Label text="Extras:" />
+        <ComboBox fx:id="extrasComboBox" prefHeight="42.0" prefWidth="528.0" promptText="choose Extras" />
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="page-container">
+
+           <Label styleClass="qty-row" text="Qty:" />
+            <TextField fx:id="extraQtyTextField" alignment="CENTER" promptText="Enter Qty" styleClass="text-field" />
+            <Button fx:id="extraAddButton" onAction="#onAddExtrasClicked" text="ADD" />
+        </HBox>
+
+
+    <HBox styleClass="actionControls">
+        <Button fx:id="cancelButton"  text="Cancel"
+        onAction="#cancelClicked"/>
+
+        <Button fx:id="updateProduct" onAction="#onNextClicked" text="Next" />
+    </HBox>
+
+
+</VBox>

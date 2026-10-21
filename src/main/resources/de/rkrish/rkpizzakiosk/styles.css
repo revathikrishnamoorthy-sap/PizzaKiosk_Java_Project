@@ -1,0 +1,66 @@
+/* ===============================
+   MAIN CONTAINER (ROOT VBOX)
+   =============================== */
+
+.page-container {
+    -fx-min-width: 600px;
+    -fx-pref-width: 600px;
+    -fx-spacing: 15px;
+    -fx-padding: 20px;
+    -fx-alignment: center;
+}
+
+/* ===============================
+   GLOBAL FONT STYLING
+   =============================== */
+
+.label,
+.text-field,
+.text-area,
+.combo-box,
+.button {
+    -fx-font-size: 22px;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+/* ===============================
+   HEADER TEXT
+   =============================== */
+
+.top-header {
+    -fx-font-weight: bold;
+    -fx-text-fill: #ab4b4b;
+    -fx-font-size: 26px;
+    -fx-alignment: center;
+    -fx-padding: 0 0 10px 0;
+}
+
+/* ===============================
+   ACTION BUTTONS (Cancel / Next)
+   =============================== */
+
+.actionControls {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+
+.actionControls > .button {
+    -fx-pref-width: 150px;
+}
+
+/* ===============================
+   QTY ROW — TextField + ADD button
+   =============================== */
+
+.qty-row {
+    -fx-alignment: center-left;
+    -fx-spacing: 10px;
+}
+
+.qty-row > .text-field {
+    -fx-pref-width: 150px;
+}
+
+.qty-row > .button {
+    -fx-pref-width: 120px;
+}

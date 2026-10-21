@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="de.rkrish.rkpizzakiosk.gui.dashboard.OrderDetails">
+
+    <stylesheets>
+        <URL value="@styles.css"/>
+    </stylesheets>
+
+    <Label fx:id="productDetailsHeader"
+           styleClass="top-header"
+           text="OrderDetails"/>
+
+    <Label fx:id="orderDetailsLabel"
+           text="Your Orders:"/>
+    <ListView
+            fx:id="ordersList"/>
+
+    <Label fx:id="totalPriceLabel"
+           text="Total Price:"/>
+    <TextField fx:id="totalPriceText"
+               promptText="Your Total Price "/>
+
+
+<!--    <HBox fx:id="productDimensions"-->
+<!--          styleClass="inner-h-box, product-dimensions">-->
+<!--    <VBox styleClass="product-dimension">-->
+<!--        <Label fx:id="enterYourAmountLabel"-->
+<!--               text="Enter Your Amount:"/>-->
+<!--        <TextField fx:id="customerAmount"-->
+<!--                   promptText=" "/>-->
+<!--    </VBox>-->
+<!--    </HBox>-->
+
+    <HBox fx:id="actionControls"
+          styleClass="actionControls">
+    <Button fx:id="amountToPay"
+            text="Confirm"
+            onAction="#onPayClicked"/>
+    <Button fx:id="cancelOrder"
+            text="Cancel"
+            onAction="#cancelClicked"/>
+    </HBox>
+
+</VBox>
